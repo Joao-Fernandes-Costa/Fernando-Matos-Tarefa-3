@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Uma Aventura Lego 2</title>
+    <style>
+        /* Reset and base styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #000;
+            color: #fff;
+        }
+        /* Menu styles */
+        nav {
+            background-color: #111;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        /* Main image styles */
+        .main-image-container {
+            max-width: 900px;
+            margin: 2rem auto;
+            position: relative;
+            overflow: visible;
+        }
+        .main-image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 12px;
+            box-shadow: 0 10px 20px rgba(255, 204, 0, 0.8);
+            transition: box-shadow 0.3s ease, transform 0.3s ease;
+            cursor: pointer;
+        }
+        .main-image-container img:hover {
+            box-shadow: 0 20px 40px rgba(255, 204, 0, 1);
+            transform: scale(1.05) rotate(1deg);
+        }
+        /* Container for image and text cards side by side */
+        .content-pair {
+            max-width: 900px;
+            margin: 2rem auto;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            align-items: flex-start;
+            justify-content: center;
+        }
+        /* Image card */
+        .image-card {
+            background-color: #111;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6);
+            width: 280px;
+            padding: 0.5rem;
+            transition: box-shadow 3s ease infinite;
+            cursor: pointer;
+        }
+        /* Animated box shadow color change */
+        @keyframes shadowColorChange {
+            0% {
+                box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+            }
+            33% {
+                box-shadow: 0 4px 10px rgba(0, 255, 0, 0.6);
+            }
+            66% {
+                box-shadow: 0 4px 10px rgba(0, 0, 255, 0.6);
+            }
+            100% {
+                box-shadow: 0 4px 10px rgba(255, 0, 0, 0.6);
+            }
+        }
+        .image-card:hover {
+            animation: shadowColorChange 3s infinite;
+        }
+        /* Image styles */
+        .image-card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.4s ease;
+        }
+        .image-card img:hover {
+            transform: scale(1.1);
+        }
+        /* Caption styles */
+        .caption {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: #ccc;
+            text-align: center;
+        }
+        /* Text card */
+        .text-card {
+            background-color: #111;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(255, 204, 0, 0.6);
+            width: 280px;
+            padding: 1rem;
+            color: #eee;
+            font-size: 1rem;
+            text-align: justify;
+            transition: box-shadow 3s ease infinite;
+        }
+        .text-card:hover {
+            animation: shadowColorChange 3s infinite;
+        }
+        /* Responsive adjustments */
+        @media (max-width: 960px) {
+            .content-pair {
+                flex-direction: column;
+                align-items: center;
+            }
+            .image-card, .text-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.imdb.com/title/tt3513498/" target="_blank" rel="noopener noreferrer">IMDb</a>
+        <a href="https://www.rottentomatoes.com/m/the_lego_movie_2_the_second_part" target="_blank" rel="noopener noreferrer">Rotten Tomatoes</a>
+        <a href="https://pt.wikipedia.org/wiki/Uma_Aventura_Lego_2" target="_blank" rel="noopener noreferrer">Wikipedia</a>
+    </nav>
+
+    <section class="main-image-container">
+        <img src="images.jpeg" alt="Imagem principal do filme Uma Aventura Lego 2" title="Uma Aventura Lego 2" />
+    </section>
+
+    <section class="content-pair">
+        <div class="image-card">
+            <img src="images2.jpg" alt="Cena do filme Uma Aventura Lego 2 - Enredo" />
+            <div class="caption">O Inicio</div>
+        </div>
+        <div class="text-card">
+            Em "Uma Aventura Lego 2", a história continua após os eventos do primeiro filme, onde a cidade de Bricksburg enfrenta uma nova ameaça alienígena chamada Systar System. Os personagens principais, incluindo Emmet, Lucy e Batman, embarcam em uma aventura para salvar seu mundo e restaurar a paz.
+        </div>
+    </section>
+
+    <section class="content-pair">
+        <div class="image-card">
+            <img src="images3.jpeg" alt="Cena do filme Uma Aventura Lego 2 - Trama" />
+            <div class="caption">O que se trata?</div>
+        </div>
+        <div class="text-card">
+            A trama explora temas de amizade, coragem e autoaceitação, enquanto os personagens enfrentam desafios pessoais e coletivos. O filme combina humor, ação e emoção para criar uma experiência divertida e envolvente para todas as idades.
+        </div>
+    </section>
+
+    <section class="content-pair">
+        <div class="image-card">
+            <img src="images4.jpeg" alt="Cena do filme Uma Aventura Lego 2 - Personagens" />
+            <div class="caption">Personagens</div>
+        </div>
+        <div class="text-card">
+            Além dos protagonistas, o filme apresenta uma variedade de personagens secundários interessantes, cada um com suas próprias histórias e motivações. A dinâmica entre eles adiciona profundidade e humor à narrativa geral.
+        </div>
+    </section>
+</body>
+</html>
